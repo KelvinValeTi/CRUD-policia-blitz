@@ -9,8 +9,6 @@
 
 <div class="container">
     <?php
-
-
         //listando os elementos
         $sql = $pdo->prepare("SELECT * FROM efetivo_policia");
         $sql->execute();
