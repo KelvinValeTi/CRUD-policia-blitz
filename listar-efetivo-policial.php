@@ -4,7 +4,7 @@
 ?>
 
 <div class="container">
-    <p>O efetivo é exibido por ordem de patente, da maior para a menor.</p>
+    <h2 class="mt-4 text-center">Efetivo policial</h2>
 </div>
 
 <div class="container">
@@ -17,9 +17,8 @@
 
         //verificando se existem dados na tabela
         if(count($dados)>0){
-            echo"<table>
+            echo"<table class='table table-bordered table-striped text-center'>
                     <tr>
-                        <th>ID</th>
                         <th>Matricula</th>
                         <th>Patente</th>
                         <th>Nome</th>
@@ -28,7 +27,6 @@
 
             foreach($dados as $chave=>$valor){
                 echo "<tr>
-                        <td>".$valor['id']."</td>
                         <td>".$valor['matricula']."</td>
                         <td>".$valor['patente']."</td>
                         <td>".$valor['nome']."</td>

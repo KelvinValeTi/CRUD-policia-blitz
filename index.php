@@ -56,7 +56,7 @@
 
                     include("listar-efetivo-policial.php");
 
-                    echo "<p class='alert alert-success'>Deletado com sucesso!</p>";
+                    echo "<p class='alert alert-success text-center'>Deletado com sucesso!</p>";
                 break;
 
             default:
