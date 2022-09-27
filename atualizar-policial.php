@@ -55,7 +55,6 @@
             $sql = $pdo->prepare("UPDATE efetivo_policia SET matricula=?, patente=?, nome=? WHERE id=?");
             $sql->execute(array($matricula,$patente,$nome,$id));
             
-            echo "<p class='alert alert-success'>ALTERADO com sucesso!</p>";
             header("location: index.php");
         }
 
@@ -74,7 +73,7 @@
     <div class="row align-items-start p-3">             
         <div class="col p-3">
             <label class="form-label text-start">Matrícula:</label>
-            <input type="text" class="form-control input-group text-center" name="matricula" 
+            <input type="text" class="form-control input-group text-start" name="matricula" 
             value="<?php print $dados['matricula'];?>" required>
         </div>
 
@@ -113,7 +112,7 @@
     </div>
 
     <div class="container text-center">
-        <button class="btn btn-primary btn-lg"><a class="nav-link" href="index.php">Voltar</a></button>
+        <button class="btn btn-danger btn-lg"><a class="nav-link" href="?page=listar">Cancelar</a></button>
     </div>
 </form>
 

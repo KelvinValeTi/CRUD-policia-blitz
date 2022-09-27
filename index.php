@@ -60,7 +60,7 @@
                 break;
 
             default:
-                include("carrosel.php");
+                include("apresentacao.php");
         }
     ?>
 
